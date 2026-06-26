@@ -20,6 +20,7 @@
   <a href="#architecture">Architecture</a> •
   <a href="#platform-features">Features</a> •
   <a href="#how-it-works">How It Works</a> •
+  <a href="#system-design-documentation">System Design</a> •
   <a href="#getting-started">Getting Started</a> •
   <a href="#contributing">Contributing</a>
 </p>
@@ -277,6 +278,25 @@ A single natural-language request triggers an entire AI workforce to collaborate
                          │              Production                 │
                          └─────────────────────────────────────────┘
 ```
+
+---
+
+## System Design Documentation
+
+Zarix AgentOS includes a complete, professional **system design documentation set** with interactive diagrams (rendered natively on GitHub via Mermaid). Explore the full technical blueprint:
+
+| Document | Description |
+|----------|-------------|
+| 📐 [System Analysis & Design](./docs/system-analysis-and-design.md) | Requirements, stakeholders, design methodology, system boundaries |
+| 🏗️ [System Architecture](./docs/system-architecture.md) | Layered architecture, component & deployment diagrams |
+| 🎯 [Use Case Diagram](./docs/use-case-diagram.md) | Actors, use cases, and system interactions |
+| 🗄️ [Entity Relationship Diagram](./docs/entity-relationship-diagram.md) | Database schema, entities, and relationships |
+| 🔄 [Sequence Diagram](./docs/sequence-diagram.md) | Task execution & approval flow sequences |
+| 📊 [Data Flow Diagram](./docs/data-flow-diagram.md) | Data movement across processes (DFD Level 0 & 1) |
+| 🧩 [Module Diagram](./docs/module-diagram.md) | Code module structure and dependencies |
+| 📅 [Gantt Chart](./docs/gantt-chart.md) | Project roadmap, milestones, and timeline |
+
+> 📑 **[View Full Documentation Index →](./docs/README.md)**
 
 ---
 
