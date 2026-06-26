@@ -249,10 +249,33 @@ A single natural-language request triggers an entire AI workforce to collaborate
 | 6 | **DevOps Agent** | Deploys the application |
 
 ```
-User Request ──▶ CTO ──▶ Product ──▶ Designer ──▶ Developer ──▶ QA ──▶ DevOps ──▶ Deployed
-   "Build ecommerce SaaS"   │         │            │             │        │         │
-                            ▼         ▼            ▼             ▼        ▼         ▼
-                        Architecture  Roadmap    UI Plan        Code    Tests    Deployment
+                         ┌─────────────────────────────────────────┐
+                         │            👤  USER REQUEST              │
+                         │   "Build me an ecommerce SaaS platform" │
+                         └────────────────────┬────────────────────┘
+                                              │
+                                              ▼
+   ┌──────────────┐      ┌──────────────┐      ┌──────────────┐      ┌──────────────┐
+   │  🏛️  CTO     │─────▶│  📋 PRODUCT  │─────▶│  🎨 DESIGNER │─────▶│  💻 DEVELOPER│
+   │              │      │              │      │              │      │              │
+   │   System     │      │   Product    │      │   UI/UX      │      │ Application   │
+   │ Architecture │      │   Roadmap    │      │    Plan      │      │    Code       │
+   └──────────────┘      └──────────────┘      └──────────────┘      └──────┬───────┘
+                                                                          │
+                                                                          ▼
+   ┌──────────────┐      ┌──────────────┐                                 │
+   │  🚀 DEVOPS   │◀─────│   🧪 QA      │◀────────────────────────────────┘
+   │              │      │              │
+   │  Deployment  │      │    Tests &   │
+   │              │      │  Validation  │
+   └──────┬───────┘      └──────────────┘
+          │
+          ▼
+                         ┌─────────────────────────────────────────┐
+                         │              ✅  DEPLOYED                │
+                         │   Ecommerce SaaS Platform — Live in     │
+                         │              Production                 │
+                         └─────────────────────────────────────────┘
 ```
 
 ---
