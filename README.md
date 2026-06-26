@@ -471,20 +471,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
-## Connect & Follow
-
-<div align="center">
-
-**Built by [Zain Sardar](https://github.com/zainsardar-tech)**
-
-**GitHub Repository:** [zainsardar-tech/zarix-agentos](https://github.com/zainsardar-tech/zarix-agentos)
-
-If this project helps you, please consider giving it a **star** on GitHub - it helps others discover it!
-
-</div>
-
----
-
 <div align="center">
 
 ### The Future of Work is Autonomous
