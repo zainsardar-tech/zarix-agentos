@@ -1,10 +1,10 @@
-# 🤝 Contributing to Zarix AgentOS
+# Contributing to Zarix AgentOS
 
 Thank you for your interest in contributing to **Zarix AgentOS**! This document outlines the guidelines for contributing.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Fork** the repository
 2. **Clone** your fork:
@@ -33,7 +33,7 @@ Thank you for your interest in contributing to **Zarix AgentOS**! This document 
 
 ---
 
-## 🧑‍💻 Development Workflow
+## Development Workflow
 
 ### Running the Backend
 ```bash
@@ -56,7 +56,7 @@ zarix llm providers
 
 ---
 
-## 📝 Code Standards
+## Code Standards
 
 ### Python (Backend)
 - Follow **PEP 8** style guidelines
@@ -73,7 +73,7 @@ zarix llm providers
 
 ---
 
-## 🤖 Adding a New Agent
+## Adding a New Agent
 
 1. Create a new file in `backend/app/agents/` (or add to an existing department file)
 2. Define a class inheriting from `BaseAgent`:
@@ -96,7 +96,7 @@ zarix llm providers
 
 ---
 
-## 🧠 Adding a New LLM Provider
+## Adding a New LLM Provider
 
 1. Create a new file in `backend/app/llm/`
 2. Implement the `BaseLLMProvider` interface (`chat` and `stream_chat`)
@@ -106,7 +106,7 @@ zarix llm providers
 
 ---
 
-## 🔧 Adding a New Tool
+## Adding a New Tool
 
 1. Create a new file in `backend/app/tools/`
 2. Implement the `BaseTool` interface (`execute` method returning `ToolResult`)
@@ -115,7 +115,7 @@ zarix llm providers
 
 ---
 
-## 📤 Submitting Changes
+## Submitting Changes
 
 1. Create a feature branch:
    ```bash
@@ -141,7 +141,7 @@ zarix llm providers
 
 ---
 
-## ✅ Pull Request Checklist
+## Pull Request Checklist
 
 - [ ] Code follows the style guidelines
 - [ ] Self-review completed
@@ -152,7 +152,7 @@ zarix llm providers
 
 ---
 
-## 🐛 Reporting Bugs
+## Reporting Bugs
 
 Open an issue with:
 - Clear title and description
@@ -162,10 +162,10 @@ Open an issue with:
 
 ---
 
-## 💬 Questions & Discussion
+## Questions & Discussion
 
 Open a [GitHub Discussion](https://github.com/zainsardar-tech/zarix-agentos/discussions) for questions, ideas, and general discussion.
 
 ---
 
-Thank you for helping make Zarix AgentOS better! 🚀
+Thank you for helping make Zarix AgentOS better!

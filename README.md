@@ -1,6 +1,8 @@
 <div align="center">
 
-# 🛰️ Zarix AgentOS
+<img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/radar.svg" width="56" height="56" alt="Zarix AgentOS" />
+
+# Zarix AgentOS
 
 ### The Autonomous AI Workforce Operating System for Modern Enterprises
 
@@ -13,36 +15,36 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-00C896?style=for-the-badge)](https://github.com/zainsardar-tech/zarix-agentos/pulls)
 
 <p>
-  <a href="#-vision">Vision</a> •
-  <a href="#-ai-digital-workforce">AI Workforce</a> •
-  <a href="#-architecture">Architecture</a> •
-  <a href="#-platform-features">Features</a> •
-  <a href="#-how-it-works">How It Works</a> •
-  <a href="#-getting-started">Getting Started</a> •
-  <a href="#-contributing">Contributing</a>
+  <a href="#vision">Vision</a> •
+  <a href="#ai-digital-workforce">AI Workforce</a> •
+  <a href="#architecture">Architecture</a> •
+  <a href="#platform-features">Features</a> •
+  <a href="#how-it-works">How It Works</a> •
+  <a href="#getting-started">Getting Started</a> •
+  <a href="#contributing">Contributing</a>
 </p>
 
 </div>
 
 ---
 
-> ⚡ **Zarix AgentOS** is an open-source Agentic AI platform that replaces traditional agency workflows by providing a complete AI workforce — capable of handling software development, business operations, automation, analysis, and enterprise tasks.
+> **Zarix AgentOS** is an open-source Agentic AI platform that replaces traditional agency workflows by providing a complete AI workforce — capable of handling software development, business operations, automation, analysis, and enterprise tasks.
 
 ---
 
-## 🌌 Vision
+## Vision
 
 Build an **open-source Agentic AI platform** that can replace traditional agency workflows by providing a complete AI workforce capable of handling software development, business operations, automation, analysis, and enterprise tasks.
 
-### 🎯 Mission
+### Mission
 
-- 🧠 Create a **universal AI agent ecosystem** where companies can deploy specialized AI employees.
-- ⚙️ **Automate workflows** currently handled by large technology agencies and outsourced teams.
-- 👥 Enable **humans to manage AI teams** instead of managing repetitive operational tasks.
+- Create a **universal AI agent ecosystem** where companies can deploy specialized AI employees.
+- **Automate workflows** currently handled by large technology agencies and outsourced teams.
+- Enable **humans to manage AI teams** instead of managing repetitive operational tasks.
 
 ---
 
-## 📌 Product Positioning
+## Product Positioning
 
 | | |
 |---|---|
@@ -52,46 +54,46 @@ Build an **open-source Agentic AI platform** that can replace traditional agency
 
 ---
 
-## 🤖 AI Digital Workforce
+## AI Digital Workforce
 
 A **multi-agent system** where every agent behaves like an expert employee — with memory, skills, tools, and collaboration ability.
 
-### 🛠️ Engineering Department
+### Engineering Department
 
 | Agent | Skills |
 |-------|--------|
-| 🧭 **AI CTO Agent** | System Architecture · Technology Decisions · Scalability Planning · Code Review |
-| 💻 **Full Stack Engineer Agent** | React · Next.js · Node.js · Python · FastAPI · Django · APIs |
-| ☁️ **DevOps Agent** | AWS · Docker · Kubernetes · CI/CD · Cloud Deployment |
-| 🧪 **QA Engineer Agent** | Testing · Automation Testing · Bug Detection · Security Testing |
+| **AI CTO Agent** | System Architecture · Technology Decisions · Scalability Planning · Code Review |
+| **Full Stack Engineer Agent** | React · Next.js · Node.js · Python · FastAPI · Django · APIs |
+| **DevOps Agent** | AWS · Docker · Kubernetes · CI/CD · Cloud Deployment |
+| **QA Engineer Agent** | Testing · Automation Testing · Bug Detection · Security Testing |
 
-### 💼 Business Department
-
-| Agent | Skills |
-|-------|--------|
-| 📊 **Business Analyst Agent** | Requirements Gathering · Process Analysis · Business Optimization |
-| 🗺️ **Product Manager Agent** | Roadmaps · Feature Planning · User Research |
-| 📣 **Marketing Agent** | Content · SEO · Campaigns · Growth Strategy |
-| 🤝 **Sales Agent** | Lead Generation · CRM · Personalized Outreach |
-
-### 🎨 Creative Department
+### Business Department
 
 | Agent | Skills |
 |-------|--------|
-| 🖌️ **UI/UX Designer Agent** | Design Systems · Wireframes · User Experience |
-| ✍️ **Content Creator Agent** | Blogs · Documentation · Social Media |
+| **Business Analyst Agent** | Requirements Gathering · Process Analysis · Business Optimization |
+| **Product Manager Agent** | Roadmaps · Feature Planning · User Research |
+| **Marketing Agent** | Content · SEO · Campaigns · Growth Strategy |
+| **Sales Agent** | Lead Generation · CRM · Personalized Outreach |
 
-### 🏢 Enterprise Department
+### Creative Department
 
 | Agent | Skills |
 |-------|--------|
-| 🏗️ **ERP Consultant Agent** | Odoo · SAP · Dynamics · Business Automation |
-| 📈 **Data Analyst Agent** | Dashboards · Analytics · Business Intelligence |
-| 🔐 **Cyber Security Agent** | Threat Analysis · Security Audit · Compliance |
+| **UI/UX Designer Agent** | Design Systems · Wireframes · User Experience |
+| **Content Creator Agent** | Blogs · Documentation · Social Media |
+
+### Enterprise Department
+
+| Agent | Skills |
+|-------|--------|
+| **ERP Consultant Agent** | Odoo · SAP · Dynamics · Business Automation |
+| **Data Analyst Agent** | Dashboards · Analytics · Business Intelligence |
+| **Cyber Security Agent** | Threat Analysis · Security Audit · Compliance |
 
 ---
 
-## 🧠 Supported LLM Providers
+## Supported LLM Providers
 
 Zarix AgentOS includes a **unified LLM Gateway** that connects to 6 major LLM providers through a single interface. Every agent can be configured to use any provider and model.
 
@@ -104,7 +106,7 @@ Zarix AgentOS includes a **unified LLM Gateway** that connects to 6 major LLM pr
 | **Mistral** | Mistral Large · Codestral | European compliance · Code |
 | **DeepSeek** | DeepSeek Coder · DeepSeek Reasoner | Coding · Mathematical reasoning |
 
-### 🔌 LLM Gateway Features
+### LLM Gateway Features
 
 - **Unified API** — one interface for all 6 providers
 - **Provider fallback** — automatically fall back to alternate providers on failure
@@ -137,7 +139,7 @@ async for token in gateway.stream(
 
 ---
 
-## 🧩 Platform Features
+## Platform Features
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -157,49 +159,49 @@ async for token in gateway.stream(
 └──────────────────┴──────────────────┴────────────────────────┘
 ```
 
-- 🤝 **Multi-agent orchestration** — coordinate teams of specialized AI employees
-- 🧠 **Agent memory system** — short-term context and long-term recall
-- 📚 **Long-term knowledge storage** — persistent organizational intelligence
-- 🔧 **Tool calling framework** — agents invoke real APIs, services, and code
-- ✅ **Human approval workflows** — keep humans in the loop for critical decisions
-- 🔄 **Agent collaboration** — agents delegate, review, and build on each other's work
-- 🗺️ **Task planning engine** — decompose complex goals into executable steps
-- 📡 **Real-time execution logs** — full transparency into agent actions
-- 🛒 **AI employee marketplace** — discover and deploy pre-built agents
-- 🔌 **Plugin architecture** — extend the platform with custom capabilities
-- 🔐 **Enterprise RBAC** — role-based access control for teams and tenants
-- 🏢 **Multi-tenant SaaS** — isolated workspaces for every organization
+- **Multi-agent orchestration** — coordinate teams of specialized AI employees
+- **Agent memory system** — short-term context and long-term recall
+- **Long-term knowledge storage** — persistent organizational intelligence
+- **Tool calling framework** — agents invoke real APIs, services, and code
+- **Human approval workflows** — keep humans in the loop for critical decisions
+- **Agent collaboration** — agents delegate, review, and build on each other's work
+- **Task planning engine** — decompose complex goals into executable steps
+- **Real-time execution logs** — full transparency into agent actions
+- **AI employee marketplace** — discover and deploy pre-built agents
+- **Plugin architecture** — extend the platform with custom capabilities
+- **Enterprise RBAC** — role-based access control for teams and tenants
+- **Multi-tenant SaaS** — isolated workspaces for every organization
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 Zarix AgentOS is built on a modern, scalable, cloud-native stack.
 
-### 🖥️ Frontend
+### Frontend
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
 ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=flat&logo=shadcnui&logoColor=white)
 
-### ⚙️ Backend
+### Backend
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
 
-### 🧠 AI Layer
+### AI Layer
 ![LLM Gateway](https://img.shields.io/badge/LLM_Gateway-8B5CF6?style=flat)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat)
 ![Agent Memory](https://img.shields.io/badge/Agent_Memory-F59E0B?style=flat)
 ![RAG Pipeline](https://img.shields.io/badge/RAG_Pipeline-10B981?style=flat)
 ![Vector DB](https://img.shields.io/badge/Vector_DB-EF4444?style=flat)
 
-### 🗄️ Database
+### Database
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
 ![Vector DB](https://img.shields.io/badge/Vector_DB-7C3AED?style=flat)
 
-### ☁️ Infrastructure
+### Infrastructure
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat&logo=amazonaws&logoColor=white)
@@ -229,25 +231,25 @@ Zarix AgentOS is built on a modern, scalable, cloud-native stack.
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 A single natural-language request triggers an entire AI workforce to collaborate end-to-end.
 
-### 📝 Workflow Example
+### Workflow Example
 
 > **User Request:** *"Build me an ecommerce SaaS platform"*
 
 | Step | Agent | Action |
 |------|-------|--------|
-| 1️⃣ | 🧭 **CTO Agent** | Creates the system architecture |
-| 2️⃣ | 🗺️ **Product Agent** | Creates the product roadmap |
-| 3️⃣ | 🖌️ **Designer Agent** | Creates the UI/UX plan |
-| 4️⃣ | 💻 **Developer Agent** | Writes the application code |
-| 5️⃣ | 🧪 **QA Agent** | Tests the complete system |
-| 6️⃣ | ☁️ **DevOps Agent** | Deploys the application |
+| 1 | **CTO Agent** | Creates the system architecture |
+| 2 | **Product Agent** | Creates the product roadmap |
+| 3 | **Designer Agent** | Creates the UI/UX plan |
+| 4 | **Developer Agent** | Writes the application code |
+| 5 | **QA Agent** | Tests the complete system |
+| 6 | **DevOps Agent** | Deploys the application |
 
 ```
-User Request ──▶ CTO ──▶ Product ──▶ Designer ──▶ Developer ──▶ QA ──▶ DevOps ──▶ 🚀 Deployed
+User Request ──▶ CTO ──▶ Product ──▶ Designer ──▶ Developer ──▶ QA ──▶ DevOps ──▶ Deployed
    "Build ecommerce SaaS"   │         │            │             │        │         │
                             ▼         ▼            ▼             ▼        ▼         ▼
                         Architecture  Roadmap    UI Plan        Code    Tests    Deployment
@@ -255,7 +257,7 @@ User Request ──▶ CTO ──▶ Product ──▶ Designer ──▶ Develo
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -303,11 +305,11 @@ npm install
 npm run dev
 ```
 
-🌐 Open `http://localhost:3000` to access the Zarix AgentOS dashboard.
+Open `http://localhost:3000` to access the Zarix AgentOS dashboard.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 zarix-agentos/
@@ -383,7 +385,7 @@ zarix-agentos/
 
 ---
 
-## 🌍 Open Source Strategy
+## Open Source Strategy
 
 | | |
 |---|---|
@@ -395,35 +397,35 @@ Zarix AgentOS is committed to building in the open. We welcome contributors, AI 
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-We ❤️ contributions! Whether it's a bug fix, a new agent, a feature, or documentation — every contribution makes Zarix AgentOS better.
+We welcome contributions! Whether it's a bug fix, a new agent, a feature, or documentation — every contribution makes Zarix AgentOS better.
 
-1. 🍴 Fork the repository
-2. 🌿 Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. 💾 Commit your changes (`git commit -m 'Add amazing feature'`)
-4. 📤 Push to the branch (`git push origin feature/amazing-feature`)
-5. 🔁 Open a Pull Request
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting a PR.
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🌟 Connect & Follow
+## Connect & Follow
 
 <div align="center">
 
-**Built with ❤️ by [Zain Sardar](https://github.com/zainsardar-tech)**
+**Built by [Zain Sardar](https://github.com/zainsardar-tech)**
 
-🔗 **GitHub Repository:** [zainsardar-tech/zarix-agentos](https://github.com/zainsardar-tech/zarix-agentos)
+**GitHub Repository:** [zainsardar-tech/zarix-agentos](https://github.com/zainsardar-tech/zarix-agentos)
 
-⭐ If this project helps you, please consider giving it a **star** on GitHub — it helps others discover it!
+If this project helps you, please consider giving it a **star** on GitHub — it helps others discover it!
 
 </div>
 
@@ -431,10 +433,10 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 <div align="center">
 
-### 🚀 The Future of Work is Autonomous
+### The Future of Work is Autonomous
 
 > *Zarix AgentOS — where AI employees don't just assist, they **operate** your business.*
 
-**[⬆ Back to Top](#-zarix-agentos)**
+**[Back to Top](#zarix-agentos)**
 
 </div>
