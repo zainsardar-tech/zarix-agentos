@@ -1,6 +1,6 @@
 <div align="center">
 
-# 1⃣ System Analysis & Design
+# System Analysis & Design
 
 ### Zarix AgentOS - Autonomous AI Workforce Operating System
 

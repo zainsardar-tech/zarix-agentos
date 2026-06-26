@@ -1,6 +1,6 @@
 <div align="center">
 
-# 8⃣ Gantt Chart
+# Gantt Chart
 
 ### Zarix AgentOS - Project Roadmap & Development Timeline
 

@@ -1,6 +1,6 @@
 <div align="center">
 
-# 5⃣ Sequence Diagram
+# Sequence Diagram
 
 ### Zarix AgentOS - Customer Order / Task Execution Sequence
 

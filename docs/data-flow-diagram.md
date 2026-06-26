@@ -1,6 +1,6 @@
 <div align="center">
 
-# 6⃣ Data Flow Diagram
+# Data Flow Diagram
 
 ### Zarix AgentOS - Data Movement Across System Processes
 

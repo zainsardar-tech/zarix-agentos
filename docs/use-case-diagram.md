@@ -1,6 +1,6 @@
 <div align="center">
 
-# 3⃣ Use Case Diagram
+# Use Case Diagram
 
 ### Zarix AgentOS - Actors, Use Cases & System Boundaries
 

@@ -1,6 +1,6 @@
 <div align="center">
 
-# 7⃣ Module Diagram
+# Module Diagram
 
 ### Zarix AgentOS - Code Module Structure & Dependencies
 

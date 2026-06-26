@@ -1,6 +1,6 @@
 <div align="center">
 
-# 4⃣ Entity Relationship Diagram
+# Entity Relationship Diagram
 
 ### Zarix AgentOS - Database Schema & Entity Relationships
 

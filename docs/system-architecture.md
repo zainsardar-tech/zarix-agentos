@@ -1,6 +1,6 @@
 <div align="center">
 
-# 2⃣ System Architecture
+# System Architecture
 
 ### Zarix AgentOS - Layered Cloud-Native Architecture
 
