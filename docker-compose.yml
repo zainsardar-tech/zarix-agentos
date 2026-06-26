@@ -1,0 +1,123 @@
+version: "3.9"
+
+# ============================================================
+#  Zarix AgentOS — Full Stack Docker Compose
+# ============================================================
+#  Services:
+#    - postgres   (relational DB)
+#    - redis      (cache + task queue)
+#    - chroma     (vector DB for RAG / memory)
+#    - backend    (FastAPI API + orchestration)
+#    - worker     (Celery background workers)
+#    - frontend   (Next.js dashboard)
+# ------------------------------------------------------------
+
+services:
+  # ── PostgreSQL ──────────────────────────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    container_name: zarix-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: zarix
+      POSTGRES_PASSWORD: zarix
+      POSTGRES_DB: zarix_agentos
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U zarix"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── Redis ──────────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: zarix-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── Chroma Vector DB ──────────────────────────────────────
+  chroma:
+    image: chromadb/chroma:latest
+    container_name: zarix-chroma
+    restart: unless-stopped
+    ports:
+      - "8001:8000"
+    volumes:
+      - chroma_data:/chroma/chroma
+    environment:
+      - IS_PERSISTENT=TRUE
+
+  # ── Backend (FastAPI) ─────────────────────────────────────
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: zarix-backend
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      chroma:
+        condition: service_started
+    volumes:
+      - ./backend:/app
+      - ./shared:/app/shared
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  # ── Background Worker (Celery) ────────────────────────────
+  worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: zarix-worker
+    restart: unless-stopped
+    env_file:
+      - .env
+    depends_on:
+      - backend
+      - redis
+    volumes:
+      - ./backend:/app
+      - ./shared:/app/shared
+    command: celery -A app.core.celery_app worker --loglevel=info --concurrency=4
+
+  # ── Frontend (Next.js) ────────────────────────────────────
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: zarix-frontend
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    command: npm run dev
+
+volumes:
+  postgres_data:
+  redis_data:
+  chroma_data:
