@@ -1,8 +1,8 @@
 <div align="center">
 
-# 8️⃣ Gantt Chart
+# 8⃣ Gantt Chart
 
-### Zarix AgentOS — Project Roadmap & Development Timeline
+### Zarix AgentOS - Project Roadmap & Development Timeline
 
 </div>
 
@@ -18,63 +18,63 @@ This Gantt Chart visualizes the **development roadmap and project timeline** for
 
 ```mermaid
 gantt
-    title Zarix AgentOS — Development Roadmap
-    dateFormat  YYYY-MM-DD
-    axisFormat  %b %Y
+  title Zarix AgentOS - Development Roadmap
+  dateFormat  YYYY-MM-DD
+  axisFormat  %b %Y
 
-    section Phase 1 — Foundation
-    Project Setup & Repo Init        :p1a, 2025-01-06, 14d
-    Backend Core (FastAPI + Config)  :p1b, after p1a, 21d
-    Database & ORM Models             :p1c, after p1a, 21d
-    Docker & Compose Setup           :p1d, after p1b, 14d
+  section Phase 1 - Foundation
+  Project Setup & Repo Init  :p1a, 2025-01-06, 14d
+  Backend Core (FastAPI + Config)  :p1b, after p1a, 21d
+  Database & ORM Models  :p1c, after p1a, 21d
+  Docker & Compose Setup  :p1d, after p1b, 14d
 
-    section Phase 2 — AI Layer
-    LLM Gateway (6 Providers)        :p2a, after p1b, 28d
-    Provider Fallback Logic          :p2b, after p2a, 14d
-    Agent Memory System              :p2c, after p2a, 21d
-    Long-Term Vector Memory          :p2d, after p2c, 14d
+  section Phase 2 - AI Layer
+  LLM Gateway (6 Providers)  :p2a, after p1b, 28d
+  Provider Fallback Logic  :p2b, after p2a, 14d
+  Agent Memory System  :p2c, after p2a, 21d
+  Long-Term Vector Memory  :p2d, after p2c, 14d
 
-    section Phase 3 — Agent Framework
-    BaseAgent Core                   :p3a, after p2a, 14d
-    Engineering Agents (4)           :p3b, after p3a, 21d
-    Business Agents (4)              :p3c, after p3a, 21d
-    Creative Agents (2)              :p3d, after p3a, 14d
-    Enterprise Agents (3)            :p3e, after p3a, 21d
-    Agent Registry                   :p3f, after p3b, 7d
+  section Phase 3 - Agent Framework
+  BaseAgent Core  :p3a, after p2a, 14d
+  Engineering Agents (4)  :p3b, after p3a, 21d
+  Business Agents (4)  :p3c, after p3a, 21d
+  Creative Agents (2)  :p3d, after p3a, 14d
+  Enterprise Agents (3)  :p3e, after p3a, 21d
+  Agent Registry  :p3f, after p3b, 7d
 
-    section Phase 4 — Orchestration
-    Task Planner                     :p4a, after p3f, 21d
-    Orchestrator Engine              :p4b, after p4a, 28d
-    Celery Async Tasks               :p4c, after p4b, 14d
-    Agent Collaboration              :p4d, after p4b, 21d
+  section Phase 4 - Orchestration
+  Task Planner  :p4a, after p3f, 21d
+  Orchestrator Engine  :p4b, after p4a, 28d
+  Celery Async Tasks  :p4c, after p4b, 14d
+  Agent Collaboration  :p4d, after p4b, 21d
 
-    section Phase 5 — Tools & APIs
-    Tool Framework Base              :p5a, after p3f, 14d
-    Code / Web / File / Shell Tools  :p5b, after p5a, 21d
-    REST API Routes                  :p5c, after p4c, 21d
-    WebSocket Streaming              :p5d, after p5c, 14d
+  section Phase 5 - Tools & APIs
+  Tool Framework Base  :p5a, after p3f, 14d
+  Code / Web / File / Shell Tools  :p5b, after p5a, 21d
+  REST API Routes  :p5c, after p4c, 21d
+  WebSocket Streaming  :p5d, after p5c, 14d
 
-    section Phase 6 — Frontend
-    Next.js Dashboard Setup          :p6a, after p5c, 14d
-    Task Submission UI               :p6b, after p6a, 21d
-    Real-time Logs View              :p6c, after p5d, 21d
-    Agent Management UI              :p6d, after p6b, 14d
+  section Phase 6 - Frontend
+  Next.js Dashboard Setup  :p6a, after p5c, 14d
+  Task Submission UI  :p6b, after p6a, 21d
+  Real-time Logs View  :p6c, after p5d, 21d
+  Agent Management UI  :p6d, after p6b, 14d
 
-    section Phase 7 — Infrastructure
-    Kubernetes Manifests             :p7a, after p6c, 21d
-    GitHub Actions CI/CD             :p7b, after p7a, 14d
-    AWS Deployment Config            :p7c, after p7b, 14d
+  section Phase 7 - Infrastructure
+  Kubernetes Manifests  :p7a, after p6c, 21d
+  GitHub Actions CI/CD  :p7b, after p7a, 14d
+  AWS Deployment Config  :p7c, after p7b, 14d
 
-    section Phase 8 — Enterprise
-    Multi-Tenant SaaS                :p8a, after p7c, 28d
-    RBAC & Permissions               :p8b, after p8a, 21d
-    Human Approval Workflows         :p8c, after p8b, 14d
-    Audit Logging                    :p8d, after p8b, 14d
+  section Phase 8 - Enterprise
+  Multi-Tenant SaaS  :p8a, after p7c, 28d
+  RBAC & Permissions  :p8b, after p8a, 21d
+  Human Approval Workflows  :p8c, after p8b, 14d
+  Audit Logging  :p8d, after p8b, 14d
 
-    section Phase 9 — Future
-    Agent Marketplace                :p9a, after p8d, 42d
-    Plugin Architecture              :p9b, after p8d, 35d
-    Hosted Cloud Version             :p9c, after p9a, 56d
+  section Phase 9 - Future
+  Agent Marketplace  :p9a, after p8d, 42d
+  Plugin Architecture  :p9b, after p8d, 35d
+  Hosted Cloud Version  :p9c, after p9a, 56d
 ```
 
 ---
@@ -99,18 +99,18 @@ gantt
 
 ```mermaid
 gantt
-    title Key Milestones
-    dateFormat  YYYY-MM-DD
-    axisFormat  %b %Y
+  title Key Milestones
+  dateFormat  YYYY-MM-DD
+  axisFormat  %b %Y
 
-    section Milestones
-    M1 — MVP Backend Ready        :milestone, m1, 2025-04-15, 0d
-    M2 — AI Layer Complete        :milestone, m2, 2025-06-30, 0d
-    M3 — All 14 Agents Live       :milestone, m3, 2025-09-15, 0d
-    M4 — Orchestration Working    :milestone, m4, 2025-12-01, 0d
-    M5 — Full Stack Beta         :milestone, m5, 2026-03-15, 0d
-    M6 — Enterprise GA           :milestone, m6, 2026-07-01, 0d
-    M7 — Marketplace Launch      :milestone, m7, 2026-12-15, 0d
+  section Milestones
+  M1 - MVP Backend Ready  :milestone, m1, 2025-04-15, 0d
+  M2 - AI Layer Complete  :milestone, m2, 2025-06-30, 0d
+  M3 - All 14 Agents Live  :milestone, m3, 2025-09-15, 0d
+  M4 - Orchestration Working  :milestone, m4, 2025-12-01, 0d
+  M5 - Full Stack Beta  :milestone, m5, 2026-03-15, 0d
+  M6 - Enterprise GA  :milestone, m6, 2026-07-01, 0d
+  M7 - Marketplace Launch  :milestone, m7, 2026-12-15, 0d
 ```
 
 | Milestone | Target | Description |
@@ -166,6 +166,6 @@ gantt
 
 <div align="center">
 
-**[⬅ Back to Docs Index](./README.md)** · **[⬆ Back to Top](#)**
+**[ Back to Docs Index](./README.md)** · **[ Back to Top](#)**
 
 </div>

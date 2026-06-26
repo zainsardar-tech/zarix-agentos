@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📐 Zarix AgentOS — System Design Documentation
+#  Zarix AgentOS - System Design Documentation
 
 ### Enterprise-grade technical documentation for the Autonomous AI Workforce OS
 
@@ -8,7 +8,7 @@
 
 ---
 
-## 📑 Documentation Index
+##  Documentation Index
 
 This directory contains the complete system design documentation for **Zarix AgentOS**. All diagrams are written in **[Mermaid](https://mermaid.js.org/)** syntax and render natively on GitHub, GitLab, VS Code, and most modern markdown viewers.
 
@@ -25,7 +25,7 @@ This directory contains the complete system design documentation for **Zarix Age
 
 ---
 
-## 🎯 Design Principles
+##  Design Principles
 
 Zarix AgentOS is engineered around six core design principles:
 
@@ -40,7 +40,7 @@ Zarix AgentOS is engineered around six core design principles:
 
 ---
 
-## 🛠️ Technology Stack Summary
+##  Technology Stack Summary
 
 | Layer | Technologies |
 |-------|-------------|
@@ -52,7 +52,7 @@ Zarix AgentOS is engineered around six core design principles:
 
 ---
 
-## 📖 How to Read These Documents
+##  How to Read These Documents
 
 1. Start with **[System Analysis & Design](./system-analysis-and-design.md)** for the conceptual foundation.
 2. Review the **[System Architecture](./system-architecture.md)** to understand the technical structure.
@@ -65,6 +65,6 @@ Zarix AgentOS is engineered around six core design principles:
 
 <div align="center">
 
-**[⬅ Back to Main README](../README.md)**
+**[ Back to Main README](../README.md)**
 
 </div>

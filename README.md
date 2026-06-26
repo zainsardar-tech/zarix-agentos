@@ -6,7 +6,7 @@
 
 ### The Autonomous AI Workforce Operating System for Modern Enterprises
 
-**Open-source AI Workforce OS** — Deploy intelligent AI employees that collaborate, build, automate and operate your digital business.
+**Open-source AI Workforce OS** - Deploy intelligent AI employees that collaborate, build, automate and operate your digital business.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-0a0a0a?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://opensource.org/licenses/MIT)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-zarix--agentos-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zainsardar-tech/zarix-agentos)
@@ -29,7 +29,7 @@
 
 ---
 
-> **Zarix AgentOS** is an open-source Agentic AI platform that replaces traditional agency workflows by providing a complete AI workforce — capable of handling software development, business operations, automation, analysis, and enterprise tasks.
+> **Zarix AgentOS** is an open-source Agentic AI platform that replaces traditional agency workflows by providing a complete AI workforce - capable of handling software development, business operations, automation, analysis, and enterprise tasks.
 
 ---
 
@@ -57,7 +57,7 @@ Build an **open-source Agentic AI platform** that can replace traditional agency
 
 ## AI Digital Workforce
 
-A **multi-agent system** where every agent behaves like an expert employee — with memory, skills, tools, and collaboration ability.
+A **multi-agent system** where every agent behaves like an expert employee - with memory, skills, tools, and collaboration ability.
 
 ### Engineering Department
 
@@ -109,12 +109,12 @@ Zarix AgentOS includes a **unified LLM Gateway** that connects to 6 major LLM pr
 
 ### LLM Gateway Features
 
-- **Unified API** — one interface for all 6 providers
-- **Provider fallback** — automatically fall back to alternate providers on failure
-- **Streaming support** — token-by-token streaming for all providers
-- **Model aliasing** — use friendly names like `claude-sonnet` or `deepseek-coder`
-- **Per-agent configuration** — each agent can use a different provider/model
-- **Usage tracking** — token usage reported for every call
+- **Unified API** - one interface for all 6 providers
+- **Provider fallback** - automatically fall back to alternate providers on failure
+- **Streaming support** - token-by-token streaming for all providers
+- **Model aliasing** - use friendly names like `claude-sonnet` or `deepseek-coder`
+- **Per-agent configuration** - each agent can use a different provider/model
+- **Usage tracking** - token usage reported for every call
 
 ```python
 from app.llm import get_gateway, LLMMessage
@@ -123,19 +123,19 @@ gateway = get_gateway()
 
 # Chat with any provider
 response = await gateway.chat(
-    messages=[LLMMessage(role="user", content="Hello!")],
-    provider="anthropic",
-    model="claude-sonnet",
-    fallback=["openai", "mistral"],  # auto-fallback
+  messages=[LLMMessage(role="user", content="Hello!")],
+  provider="anthropic",
+  model="claude-sonnet",
+  fallback=["openai", "mistral"],  # auto-fallback
 )
 
 # Stream tokens
 async for token in gateway.stream(
-    messages=[LLMMessage(role="user", content="Write a poem")],
-    provider="openai",
-    model="gpt-4.1",
+  messages=[LLMMessage(role="user", content="Write a poem")],
+  provider="openai",
+  model="gpt-4.1",
 ):
-    print(token, end="")
+  print(token, end="")
 ```
 
 ---
@@ -143,35 +143,35 @@ async for token in gateway.stream(
 ## Platform Features
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    ZARIX AGENTOS PLATFORM                   │
-├──────────────────┬──────────────────┬────────────────────────┤
-│  Multi-Agent     │  Agent Memory    │  Long-Term Knowledge   │
-│  Orchestration   │  System          │  Storage               │
-├──────────────────┼──────────────────┼────────────────────────┤
-│  Tool Calling    │  Human Approval  │  Agent Collaboration   │
-│  Framework       │  Workflows       │                        │
-├──────────────────┼──────────────────┼────────────────────────┤
-│  Task Planning   │  Real-Time       │  AI Employee           │
-│  Engine          │  Execution Logs  │  Marketplace           │
-├──────────────────┼──────────────────┼────────────────────────┤
-│  Plugin          │  Enterprise RBAC │  Multi-Tenant SaaS      │
-│  Architecture    │                  │                        │
-└──────────────────┴──────────────────┴────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────┐
+│                       ZARIX AGENTOS PLATFORM                        │
+├──────────────────────┬──────────────────────┬────────────────────────┤
+│  Multi-Agent         │  Agent Memory        │  Long-Term Knowledge    │
+│  Orchestration       │  System              │  Storage                │
+├──────────────────────┼──────────────────────┼────────────────────────┤
+│  Tool Calling        │  Human Approval      │  Agent Collaboration    │
+│  Framework           │  Workflows           │                         │
+├──────────────────────┼──────────────────────┼────────────────────────┤
+│  Task Planning       │  Real-Time           │  AI Employee            │
+│  Engine              │  Execution Logs      │  Marketplace            │
+├──────────────────────┼──────────────────────┼────────────────────────┤
+│  Plugin              │  Enterprise RBAC    │  Multi-Tenant SaaS      │
+│  Architecture        │                      │                         │
+└──────────────────────┴──────────────────────┴────────────────────────┘
 ```
 
-- **Multi-agent orchestration** — coordinate teams of specialized AI employees
-- **Agent memory system** — short-term context and long-term recall
-- **Long-term knowledge storage** — persistent organizational intelligence
-- **Tool calling framework** — agents invoke real APIs, services, and code
-- **Human approval workflows** — keep humans in the loop for critical decisions
-- **Agent collaboration** — agents delegate, review, and build on each other's work
-- **Task planning engine** — decompose complex goals into executable steps
-- **Real-time execution logs** — full transparency into agent actions
-- **AI employee marketplace** — discover and deploy pre-built agents
-- **Plugin architecture** — extend the platform with custom capabilities
-- **Enterprise RBAC** — role-based access control for teams and tenants
-- **Multi-tenant SaaS** — isolated workspaces for every organization
+- **Multi-agent orchestration** - coordinate teams of specialized AI employees
+- **Agent memory system** - short-term context and long-term recall
+- **Long-term knowledge storage** - persistent organizational intelligence
+- **Tool calling framework** - agents invoke real APIs, services, and code
+- **Human approval workflows** - keep humans in the loop for critical decisions
+- **Agent collaboration** - agents delegate, review, and build on each other's work
+- **Task planning engine** - decompose complex goals into executable steps
+- **Real-time execution logs** - full transparency into agent actions
+- **AI employee marketplace** - discover and deploy pre-built agents
+- **Plugin architecture** - extend the platform with custom capabilities
+- **Enterprise RBAC** - role-based access control for teams and tenants
+- **Multi-tenant SaaS** - isolated workspaces for every organization
 
 ---
 
@@ -210,22 +210,22 @@ Zarix AgentOS is built on a modern, scalable, cloud-native stack.
 
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
-│                         FRONTEND (Next.js + React)                    │
-│                  Tailwind CSS · shadcn/ui · Real-time Logs            │
-└───────────────────────────────┬──────────────────────────────────────┘
-                                │  REST / WebSocket
-┌───────────────────────────────▼──────────────────────────────────────┐
+│                    FRONTEND (Next.js + React)                        │
+│            Tailwind CSS · shadcn/ui · Real-time Logs                 │
+└───────────────────────────────────┬──────────────────────────────────┘
+                                    │  REST / WebSocket
+┌───────────────────────────────────▼──────────────────────────────────┐
 │                    BACKEND (FastAPI + Node.js)                       │
 │            Orchestration · RBAC · Task Planning · Workflows          │
-└───────────────────────────────┬──────────────────────────────────────┘
-                                │
-┌───────────────────────────────▼──────────────────────────────────────┐
-│                          AI LAYER                                     │
-│   LLM Gateway · LangGraph · Agent Memory · RAG Pipeline · Vector DB  │
-└───────────────────────────────┬──────────────────────────────────────┘
-                                │
-┌───────────────────────────────▼──────────────────────────────────────┐
-│                       DATA & INFRASTRUCTURE                          │
+└───────────────────────────────────┬──────────────────────────────────┘
+                                    │
+┌───────────────────────────────────▼──────────────────────────────────┐
+│                          AI LAYER                                    │
+│   LLM Gateway · LangGraph · Agent Memory · RAG Pipeline · Vector DB │
+└───────────────────────────────────┬──────────────────────────────────┘
+                                    │
+┌───────────────────────────────────▼──────────────────────────────────┐
+│                       DATA & INFRASTRUCTURE                         │
 │        PostgreSQL · Redis · Vector DB · Docker · Kubernetes · AWS    │
 └──────────────────────────────────────────────────────────────────────┘
 ```
@@ -250,33 +250,34 @@ A single natural-language request triggers an entire AI workforce to collaborate
 | 6 | **DevOps Agent** | Deploys the application |
 
 ```
-                         ┌─────────────────────────────────────────┐
-                         │            👤  USER REQUEST              │
-                         │   "Build me an ecommerce SaaS platform" │
-                         └────────────────────┬────────────────────┘
-                                              │
-                                              ▼
-   ┌──────────────┐      ┌──────────────┐      ┌──────────────┐      ┌──────────────┐
-   │  🏛️  CTO     │─────▶│  📋 PRODUCT  │─────▶│  🎨 DESIGNER │─────▶│  💻 DEVELOPER│
-   │              │      │              │      │              │      │              │
-   │   System     │      │   Product    │      │   UI/UX      │      │ Application   │
-   │ Architecture │      │   Roadmap    │      │    Plan      │      │    Code       │
-   └──────────────┘      └──────────────┘      └──────────────┘      └──────┬───────┘
-                                                                          │
-                                                                          ▼
-   ┌──────────────┐      ┌──────────────┐                                 │
-   │  🚀 DEVOPS   │◀─────│   🧪 QA      │◀────────────────────────────────┘
-   │              │      │              │
-   │  Deployment  │      │    Tests &   │
-   │              │      │  Validation  │
-   └──────┬───────┘      └──────────────┘
-          │
-          ▼
-                         ┌─────────────────────────────────────────┐
-                         │              ✅  DEPLOYED                │
-                         │   Ecommerce SaaS Platform — Live in     │
-                         │              Production                 │
-                         └─────────────────────────────────────────┘
+                        +-----------------------------------------+
+                        |              USER REQUEST               |
+                        |     "Build me an ecommerce SaaS        |
+                        |             platform"                  |
+                        +-------------------+---------------------+
+                                            |
+                                            v
+  +----------------+   +----------------+   +----------------+   +----------------+
+  |     CTO        |   |    PRODUCT     |   |   DESIGNER     |   |   DEVELOPER    |
+  |                |-->|                |-->|                |-->|                |
+  |     System     |   |    Product     |   |    UI/UX       |   |  Application   |
+  |  Architecture  |   |    Roadmap     |   |     Plan       |   |     Code       |
+  +----------------+   +----------------+   +----------------+   +-------+--------+
+                                                                     |
+                                                                     v
+  +----------------+   +----------------+                            |
+  |    DEVOPS      |<--|      QA        |<---------------------------+
+  |                |   |                |
+  |   Deployment   |   |  Tests &       |
+  |                |   |  Validation    |
+  +-------+--------+   +----------------+
+          |
+          v
+                        +-----------------------------------------+
+                        |               DEPLOYED                  |
+                        |   Ecommerce SaaS Platform - Live in     |
+                        |               Production                |
+                        +-----------------------------------------+
 ```
 
 ---
@@ -287,16 +288,16 @@ Zarix AgentOS includes a complete, professional **system design documentation se
 
 | Document | Description |
 |----------|-------------|
-| 📐 [System Analysis & Design](./docs/system-analysis-and-design.md) | Requirements, stakeholders, design methodology, system boundaries |
-| 🏗️ [System Architecture](./docs/system-architecture.md) | Layered architecture, component & deployment diagrams |
-| 🎯 [Use Case Diagram](./docs/use-case-diagram.md) | Actors, use cases, and system interactions |
-| 🗄️ [Entity Relationship Diagram](./docs/entity-relationship-diagram.md) | Database schema, entities, and relationships |
-| 🔄 [Sequence Diagram](./docs/sequence-diagram.md) | Task execution & approval flow sequences |
-| 📊 [Data Flow Diagram](./docs/data-flow-diagram.md) | Data movement across processes (DFD Level 0 & 1) |
-| 🧩 [Module Diagram](./docs/module-diagram.md) | Code module structure and dependencies |
-| 📅 [Gantt Chart](./docs/gantt-chart.md) | Project roadmap, milestones, and timeline |
+|  [System Analysis & Design](./docs/system-analysis-and-design.md) | Requirements, stakeholders, design methodology, system boundaries |
+|  [System Architecture](./docs/system-architecture.md) | Layered architecture, component & deployment diagrams |
+|  [Use Case Diagram](./docs/use-case-diagram.md) | Actors, use cases, and system interactions |
+|  [Entity Relationship Diagram](./docs/entity-relationship-diagram.md) | Database schema, entities, and relationships |
+|  [Sequence Diagram](./docs/sequence-diagram.md) | Task execution & approval flow sequences |
+|  [Data Flow Diagram](./docs/data-flow-diagram.md) | Data movement across processes (DFD Level 0 & 1) |
+|  [Module Diagram](./docs/module-diagram.md) | Code module structure and dependencies |
+|  [Gantt Chart](./docs/gantt-chart.md) | Project roadmap, milestones, and timeline |
 
-> 📑 **[View Full Documentation Index →](./docs/README.md)**
+>  **[View Full Documentation Index →](./docs/README.md)**
 
 ---
 
@@ -413,6 +414,16 @@ zarix-agentos/
 │   ├── Dockerfile
 │   ├── setup.py               #   CLI entry point (zarix)
 │   └── requirements.txt
+├── docs/                      #   System design documentation
+│   ├── README.md              #     Documentation index
+│   ├── system-analysis-and-design.md
+│   ├── system-architecture.md
+│   ├── use-case-diagram.md
+│   ├── entity-relationship-diagram.md
+│   ├── sequence-diagram.md
+│   ├── data-flow-diagram.md
+│   ├── module-diagram.md
+│   └── gantt-chart.md
 ├── infra/
 │   └── k8s/                   #   Kubernetes manifests
 │       └── deployment.yaml
@@ -432,7 +443,7 @@ zarix-agentos/
 
 | | |
 |---|---|
-| **License** | MIT — fully open source |
+| **License** | MIT - fully open source |
 | **Community Focus** | Developers · AI Researchers · Companies building AI workers |
 | **Future Roadmap** | Agent Marketplace · Enterprise Edition · Hosted Cloud Version |
 
@@ -442,7 +453,7 @@ Zarix AgentOS is committed to building in the open. We welcome contributors, AI 
 
 ## Contributing
 
-We welcome contributions! Whether it's a bug fix, a new agent, a feature, or documentation — every contribution makes Zarix AgentOS better.
+We welcome contributions! Whether it's a bug fix, a new agent, a feature, or documentation - every contribution makes Zarix AgentOS better.
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -456,7 +467,7 @@ Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting a P
 
 ## License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -468,7 +479,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 **GitHub Repository:** [zainsardar-tech/zarix-agentos](https://github.com/zainsardar-tech/zarix-agentos)
 
-If this project helps you, please consider giving it a **star** on GitHub — it helps others discover it!
+If this project helps you, please consider giving it a **star** on GitHub - it helps others discover it!
 
 </div>
 
@@ -478,7 +489,7 @@ If this project helps you, please consider giving it a **star** on GitHub — it
 
 ### The Future of Work is Autonomous
 
-> *Zarix AgentOS — where AI employees don't just assist, they **operate** your business.*
+> *Zarix AgentOS - where AI employees don't just assist, they **operate** your business.*
 
 **[Back to Top](#zarix-agentos)**
 

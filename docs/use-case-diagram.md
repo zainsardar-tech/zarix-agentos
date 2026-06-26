@@ -1,8 +1,8 @@
 <div align="center">
 
-# 3️⃣ Use Case Diagram
+# 3⃣ Use Case Diagram
 
-### Zarix AgentOS — Actors, Use Cases & System Boundaries
+### Zarix AgentOS - Actors, Use Cases & System Boundaries
 
 </div>
 
@@ -18,12 +18,12 @@ The Use Case Diagram captures the interactions between **actors** (users and ext
 
 | Actor | Type | Description |
 |-------|------|-------------|
-| **End User** | 👤 Primary | Submits natural-language tasks, monitors execution, views results |
-| **Enterprise Admin** | 👤 Primary | Manages tenants, users, roles, agent configurations |
-| **Developer / Contributor** | 👤 Primary | Builds custom agents, tools, and plugins |
-| **LLM Provider** | 🌐 External | Supplies language model inference (OpenAI, Anthropic, etc.) |
-| **External APIs** | 🌐 External | Web services accessed via tool framework |
-| **Celery Worker** | ⚙️ System | Executes asynchronous background tasks |
+| **End User** |  Primary | Submits natural-language tasks, monitors execution, views results |
+| **Enterprise Admin** |  Primary | Manages tenants, users, roles, agent configurations |
+| **Developer / Contributor** |  Primary | Builds custom agents, tools, and plugins |
+| **LLM Provider** |  External | Supplies language model inference (OpenAI, Anthropic, etc.) |
+| **External APIs** |  External | Web services accessed via tool framework |
+| **Celery Worker** |  System | Executes asynchronous background tasks |
 
 ---
 
@@ -31,70 +31,70 @@ The Use Case Diagram captures the interactions between **actors** (users and ext
 
 ```mermaid
 flowchart LR
-    %% Actors
-    User((👤 End User))
-    Admin((👤 Enterprise Admin))
-    Dev((👤 Developer))
-    LLM((🌐 LLM Provider))
-    Ext((🌐 External APIs))
+  %% Actors
+  User(( End User))
+  Admin(( Enterprise Admin))
+  Dev(( Developer))
+  LLM(( LLM Provider))
+  Ext(( External APIs))
 
-    %% System Boundary
-    subgraph System["🔒 Zarix AgentOS"]
-        direction TB
+  %% System Boundary
+  subgraph System[" Zarix AgentOS"]
+  direction TB
 
-        UC1([UC-01: Submit Task Request])
-        UC2([UC-02: Monitor Execution Logs])
-        UC3([UC-03: View Task Results])
-        UC4([UC-04: Approve Critical Action])
-        UC5([UC-05: Manage Agents])
-        UC6([UC-06: Configure LLM Provider])
-        UC7([UC-07: Manage Tenants & Users])
-        UC8([UC-08: Assign Roles & Permissions])
-        UC9([UC-09: Register Custom Agent])
-        UC10([UC-10: Register Custom Tool])
-        UC11([UC-11: Install Plugin])
-        UC12([UC-12: Decompose Task])
-        UC13([UC-13: Orchestrate Agents])
-        UC14([UC-14: Execute Tool])
-        UC15([UC-15: Query LLM])
-        UC16([UC-16: Store / Retrieve Memory])
-    end
+  UC1([UC-01: Submit Task Request])
+  UC2([UC-02: Monitor Execution Logs])
+  UC3([UC-03: View Task Results])
+  UC4([UC-04: Approve Critical Action])
+  UC5([UC-05: Manage Agents])
+  UC6([UC-06: Configure LLM Provider])
+  UC7([UC-07: Manage Tenants & Users])
+  UC8([UC-08: Assign Roles & Permissions])
+  UC9([UC-09: Register Custom Agent])
+  UC10([UC-10: Register Custom Tool])
+  UC11([UC-11: Install Plugin])
+  UC12([UC-12: Decompose Task])
+  UC13([UC-13: Orchestrate Agents])
+  UC14([UC-14: Execute Tool])
+  UC15([UC-15: Query LLM])
+  UC16([UC-16: Store / Retrieve Memory])
+  end
 
-    %% End User interactions
-    User --> UC1
-    User --> UC2
-    User --> UC3
-    User --> UC4
+  %% End User interactions
+  User --> UC1
+  User --> UC2
+  User --> UC3
+  User --> UC4
 
-    %% Admin interactions
-    Admin --> UC5
-    Admin --> UC6
-    Admin --> UC7
-    Admin --> UC8
+  %% Admin interactions
+  Admin --> UC5
+  Admin --> UC6
+  Admin --> UC7
+  Admin --> UC8
 
-    %% Developer interactions
-    Dev --> UC9
-    Dev --> UC10
-    Dev --> UC11
+  %% Developer interactions
+  Dev --> UC9
+  Dev --> UC10
+  Dev --> UC11
 
-    %% Internal include relationships
-    UC1 -.->|include| UC12
-    UC12 -.->|include| UC13
-    UC13 -.->|include| UC15
-    UC13 -.->|include| UC14
-    UC13 -.->|include| UC16
+  %% Internal include relationships
+  UC1 -.->|include| UC12
+  UC12 -.->|include| UC13
+  UC13 -.->|include| UC15
+  UC13 -.->|include| UC14
+  UC13 -.->|include| UC16
 
-    %% External
-    UC15 <--> LLM
-    UC14 <--> Ext
+  %% External
+  UC15 <--> LLM
+  UC14 <--> Ext
 
-    classDef actor fill:#DBEAFE,stroke:#2563EB,color:#1E3A8A
-    classDef uc fill:#EDE9FE,stroke:#7C3AED,color:#4C1D95
-    classDef ext fill:#FEE2E2,stroke:#DC2626,color:#7F1D1D
+  classDef actor fill:#DBEAFE,stroke:#2563EB,color:#1E3A8A
+  classDef uc fill:#EDE9FE,stroke:#7C3AED,color:#4C1D95
+  classDef ext fill:#FEE2E2,stroke:#DC2626,color:#7F1D1D
 
-    class User,Admin,Dev actor
-    class UC1,UC2,UC3,UC4,UC5,UC6,UC7,UC8,UC9,UC10,UC11,UC12,UC13,UC14,UC15,UC16 uc
-    class LLM,Ext ext
+  class User,Admin,Dev actor
+  class UC1,UC2,UC3,UC4,UC5,UC6,UC7,UC8,UC9,UC10,UC11,UC12,UC13,UC14,UC15,UC16 uc
+  class LLM,Ext ext
 ```
 
 ---
@@ -208,6 +208,6 @@ flowchart LR
 
 <div align="center">
 
-**[⬅ Back to Docs Index](./README.md)** · **[⬆ Back to Top](#)**
+**[ Back to Docs Index](./README.md)** · **[ Back to Top](#)**
 
 </div>
